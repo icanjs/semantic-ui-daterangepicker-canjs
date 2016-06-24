@@ -1,6 +1,6 @@
 {
   "name": "semantic-ui-daterangepicker-canjs",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "CanJS wrapper around SemanticUI Date Range Picker component",
   "main": "date-range-picker.js",
   "scripts": {
