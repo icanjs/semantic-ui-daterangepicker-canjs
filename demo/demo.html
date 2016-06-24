@@ -23,49 +23,8 @@
       min-date="1/5/2010"
       max-date="2/15/2010"/>
 
-    <h3>Use as a single date picker with special formatting and live binding</h3>
-    <span>Date: {{date}}</span>
-    <input type="text" semantic-daterangepicker
-      start-date="Jan 5 2016"
-      end-date="Feb 5 2016"
-      format="MMM D Y"
-      single="true"
-      {($value)}="formattedDate"/>
-
   </div>
 </script>
 
 <!-- The data for the above template. -->
-<script src="../node_modules/steal/steal.js" main="can/view/autorender/">
-  import Map from 'can/map/';
-  import 'can/map/define/';
-  import moment from 'moment';
-
-  let DateMap = Map.extend({
-    define: {
-      date: {
-        value: new Date()
-      },
-
-      formattedDate: {
-        get(){
-          let date = this.attr('date');
-          return moment(date).format('MMM D Y');
-        },
-        set(val){
-          let date = moment(val);
-          // If an invalid date is set, set it to today's date.
-          if (date.toString() === 'Invalid date') {
-            return this.attr('formattedDate', moment());
-          }
-          this.attr('date', date);
-          return val;
-        }
-      }
-    }
-  });
-
-  let dateMap = new DateMap();
-
-  $('#demo').viewModel(dateMap).attr(dateMap);
-</script>
+<script src="../node_modules/steal/steal.js" main="can/view/autorender/"> </script>
