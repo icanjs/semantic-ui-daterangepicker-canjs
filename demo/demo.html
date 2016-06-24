@@ -9,14 +9,36 @@
   <div class="demo">
 
     <h3>Default Date Range Picker</h3>
+<pre><code>&lt;input type="text" semantic-daterangepicker/>
+</code></pre>
     <input type="text" semantic-daterangepicker/>
 
+    <h3>Single Date Picker</h3>
+<pre><code>&lt;input type="text" semantic-daterangepicker single="true"/>
+</code></pre>
+    <input type="text" semantic-daterangepicker single="true"/>
+
+    <h3>Single Date Picker with custom formatting</h3>
+<pre><code>&lt;input type="text" semantic-daterangepicker single="true" format="MMM D Y"/>
+</code></pre>
+    <input type="text" semantic-daterangepicker single="true" format="MMM D Y"/>
+
     <h3>Customize start and end date</h3>
+<pre><code>&lt;input type="text" semantic-daterangepicker
+  start-date="1/1/2010"
+  end-date="2/28/2010"/>
+</code></pre>
     <input type="text" semantic-daterangepicker
       start-date="1/1/2010"
       end-date="2/28/2010"/>
 
     <h3>Disable selection of dates before or after a certain date</h3>
+<pre><code>&lt;input type="text" semantic-daterangepicker
+  start-date="1/5/2010"
+  end-date="2/15/2010"
+  min-date="1/5/2010"
+  max-date="2/15/2010"/>
+</code></pre>
     <input type="text" semantic-daterangepicker
       start-date="1/5/2010"
       end-date="2/15/2010"
