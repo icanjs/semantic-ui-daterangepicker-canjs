@@ -68,7 +68,7 @@ can.view.attr('semantic-daterangepicker', function(el, attrData) {
     }
   };
 
-  $el.on('click', function(){
+  $el.on('focus', function(){
     if(!$el.data('daterangepicker')){
       $el.daterangepicker(options);
       $el.click();
